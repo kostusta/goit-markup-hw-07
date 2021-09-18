@@ -219,7 +219,7 @@ textarea {
   background-size: cover;
 }
 
-.page-hero-title {
+.page-hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -234,7 +234,7 @@ textarea {
   margin-right: auto;
 }
 
-.page-hero-button {
+.page-hero__button {
   display: block;
 
   margin-top: 30px;
@@ -245,8 +245,8 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page-hero-button:hover,
-.page-hero-button:focus {
+.page-hero__button:hover,
+.page-hero__button:focus {
   background-color: var(--btn-focus-hover-color);
 }
 
