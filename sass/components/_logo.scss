@@ -6,12 +6,12 @@
   letter-spacing: 0.03em;
 
   color: var(--logo-color);
-}
 
-.logo--dark-color {
-  color: #000000;
-}
+  &--dark-color {
+    color: #000000;
+  }
 
-.logo--light-color {
-  color: #ffffff;
+  &--light-color {
+    color: #ffffff;
+  }
 }

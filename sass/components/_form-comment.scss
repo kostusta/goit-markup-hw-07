@@ -10,12 +10,12 @@
   letter-spacing: 0.03em;
 
   color: var(--main-text-color);
-}
 
-.form-field__input.comment-input::placeholder {
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  &::placeholder {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
+  }
 }

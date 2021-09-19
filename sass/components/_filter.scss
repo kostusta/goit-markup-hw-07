@@ -1,8 +1,8 @@
 .filters-list {
   display: flex;
   justify-content: center;
-}
 
-.filters-list__item + .filters-list__item {
-  margin-left: 8px;
+  &__item + &__item {
+    margin-left: 8px;
+  }
 }

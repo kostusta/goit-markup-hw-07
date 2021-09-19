@@ -2,18 +2,18 @@
   color: var(--current-page-marker-color);
 
   position: relative;
-}
 
-.current-page-marker::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
 
-  display: block;
+    display: block;
 
-  position: absolute;
-  left: 0;
-  bottom: -1px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  }
 }

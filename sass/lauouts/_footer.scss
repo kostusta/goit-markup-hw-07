@@ -1,13 +1,13 @@
 .page-footer {
   background-color: #2f303a;
-}
 
-.page-footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  & .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-  display: flex;
-  align-items: baseline;
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .address-section {
@@ -23,20 +23,10 @@
   margin-top: 9px;
 }
 
-/* Footer Social List */
 .footer-social {
   margin-left: 70px;
 }
 
-.footer__social-list {
-  margin-top: 20px;
-}
-
-/* Footer Subscribe Form */
 .footer-form {
   margin-left: auto;
-}
-
-.footer__subscribe-form {
-  margin-top: 20px;
 }

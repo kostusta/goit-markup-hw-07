@@ -4,20 +4,20 @@
   margin-top: 50px;
   margin-right: calc(-1 * var(--main-gap));
   margin-bottom: -30px;
-}
 
-.cards-grid__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-right: var(--main-gap);
-  margin-bottom: 30px;
+  &__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: var(--main-gap);
+    margin-bottom: 30px;
 
-  background: #ffffff;
+    background: #ffffff;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.cards-grid__item:hover,
-.cards-grid__item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
 }
