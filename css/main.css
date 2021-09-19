@@ -111,6 +111,7 @@ textarea {
 
 .header__email {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -147,6 +148,7 @@ textarea {
 
 .header__telephone {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -216,8 +218,8 @@ textarea {
   border-radius: 50%;
   padding: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -406,11 +408,11 @@ textarea {
 }
 
 .benefits-list__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
@@ -733,8 +735,8 @@ textarea {
 
 .checkbox__policy {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -743,8 +745,8 @@ textarea {
 
 .checkbox__check-custom {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-right: 8px;
   width: 16px;
   height: 15px;

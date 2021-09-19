@@ -1,8 +1,6 @@
 .checkbox {
   &__policy {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-element-center();
 
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -12,9 +10,7 @@
   }
 
   &__check-custom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-element-center();
     margin-right: 8px;
     width: 16px;
     height: 15px;

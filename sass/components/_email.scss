@@ -29,8 +29,7 @@
 }
 
 .header__email {
-  display: flex;
-  align-items: center;
+  @include flex-element-center();
   padding-top: 32px;
   padding-bottom: 32px;
 }

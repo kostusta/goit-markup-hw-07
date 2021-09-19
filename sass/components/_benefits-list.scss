@@ -6,11 +6,9 @@
   }
 
   &__thumb {
+    @include flex-element-center();
     width: 270px;
     height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     background-color: #f5f4fa;
     border-radius: 4px;

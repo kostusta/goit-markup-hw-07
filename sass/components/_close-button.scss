@@ -7,9 +7,7 @@
 
   padding: 0;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-element-center();
 
   position: absolute;
   top: 8px;

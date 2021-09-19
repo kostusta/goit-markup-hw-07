@@ -111,6 +111,7 @@ textarea {
 
 .header__email {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -147,6 +148,7 @@ textarea {
 
 .header__telephone {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -323,6 +325,7 @@ textarea {
 .filters-list {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .filters-list__item + .filters-list__item {
