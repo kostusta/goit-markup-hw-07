@@ -302,7 +302,10 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+}
 
+.header__email,
+.header__telephone {
   display: flex;
   align-items: center;
   padding-top: 32px;
