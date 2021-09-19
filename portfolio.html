@@ -25,11 +25,11 @@
     
           <ul class="navigation-list navigation-section__navigation-list list">
             <li class="navigation-list__item">
-              <a class="navigation-list__link link" href="./index.html">Студия
+              <a class="navigation-list__link link current-page-marker" href="./index.html">Студия
               </a>
             </li>
             <li class="navigation-list__item">
-              <a class="navigation-list__link link current-page-marker" href="./portfolio.html">Портфолио</a>
+              <a class="navigation-list__link link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="navigation-list__item">
               <a class="navigation-list__link link" href="">Контакты</a>
@@ -39,15 +39,16 @@
     
         <ul class="contacts page-header__contacts list">
           <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
+            <a class="email email--header-text-styles link" href="mailto:info@devstudio.com">
+              <svg class="email__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+380961111111"><svg class="contacts__icon" width="10" height="16">
+            <a class="telephone telephone--header-text-styles link" href="tel:+380961111111"><svg class="telephone__icon"
+                width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -61,199 +62,225 @@
       <!-- Our projects section -->
       <section class="projects">
         <div class="container">
-          <h1 class="section-title visually-hidden">Портфолио</h1>
+          <h1 class="main-title visually-hidden">Портфолио</h1>
           <ul class="filters-list list">
-            <li class="filters-item">
-              <button class="filters-button active-button" type="button">Все</button>
+            <li class="filters-list__item">
+              <button class="secondary-button active-button" type="button">Все</button>
             </li>
-            <li class="filters-item">
-              <button class="filters-button" type="button">Веб-сайты</button>
+            <li class="filters-list__item">
+              <button class="secondary-button" type="button">Веб-сайты</button>
             </li>
-            <li class="filters-item">
-              <button class="filters-button" type="button">Приложения</button>
+            <li class="filters-list__item">
+              <button class="secondary-button" type="button">Приложения</button>
             </li>
-            <li class="filters-item">
-              <button class="filters-button" type="button">Дизайн</button>
+            <li class="filters-list__item">
+              <button class="secondary-button" type="button">Дизайн</button>
             </li>
-            <li class="filters-item">
-              <button class="filters-button" type="button">Маркетинг</button>
+            <li class="filters-list__item">
+              <button class="secondary-button" type="button">Маркетинг</button>
             </li>
           </ul>
           
-          <ul class="project-list list">
-            <li class="project-item">
-              <a class="project-link link" href="">
-                <div class="project-item-overlay">
-                  <img
-                  class="project-preview"
-                  src="./images/portfolio/portfolio-pic-1.jpg"
-                  alt="Ноутбук"
-                  width="370"
-                  height="295"
-                  />
-                  <p class="project-item-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                  шпионажа и атак на защищённые сервера конкурентов.</p>
-                </div>
-                <div class="project-item-info">
-                  <h2 class="project-title">Технокряк</h2>
-                  <p class="project-category">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="project-item">
-              <a class="project-link link" href="">
-                <div class="project-item-overlay">
-                  <img
-                    class="project-preview"
-                    src="./images/portfolio/portfolio-pic-2.jpg"
-                    alt="Спортсмены играют в баскетбол"
+          <ul class="cards-grid list">
+            <li class="cards-grid__item">
+              <article class="card">
+                <a class="card__link link" href="">
+                  <div class="card__overlay">
+                    <img
+                    class="card__preview"
+                    src="./images/portfolio/portfolio-pic-1.jpg"
+                    alt="Ноутбук"
                     width="370"
                     height="295"
-                  />
-                  <p class="project-item-description">Постер <span lang="en">New Orlean vs Golden Star</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                    />
+                    <p class="card__description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
-                </div>
-                <div class="project-item-info">
-                  <h2 class="project-title">
-                    Постер <span lang="en">New Orlean vs Golden Star</span>
-                  </h2>
-                  <p class="project-category">Дизайн</p>
-                </div>
-              </a>
+                  </div>
+                  <div class="card__info">
+                    <h2 class="card__title">Технокряк</h2>
+                    <p class="card__category">Веб-сайт</p>
+                  </div>
+                </a>
+              </article>
             </li>
-            <li class="project-item">
-              <a class="project-link link" href="">
-                <div class="project-item-overlay">
-                  <img
-                    class="project-preview"
-                    src="./images/portfolio/portfolio-pic-3.jpg"
-                    alt="Логотип ресторана в виде рыбы"
-                    width="370"
-                    height="295"
-                  />
-                  <p class="project-item-description">Ресторан <span lang="en">Seafood</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                    шпионажа и атак на защищённые сервера конкурентов.</p>
-                </div>
-                <div class="project-item-info">
-                  <h2 class="project-title">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="project-category">Приложение</p>
-                </div>
-              </a>
+            
+            <li class="cards-grid__item">
+              <article class="card">
+                <a class="card__link link" href="">
+                  <div class="card__overlay">
+                    <img
+                      class="card__preview"
+                      src="./images/portfolio/portfolio-pic-2.jpg"
+                      alt="Спортсмены играют в баскетбол"
+                      width="370"
+                      height="295"
+                    />
+                    <p class="card__description">Постер <span lang="en">New Orlean vs Golden Star</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                      шпионажа и атак на защищённые сервера конкурентов.</p>
+                  </div>
+                  <div class="card__info">
+                    <h2 class="card__title">
+                      Постер <span lang="en">New Orlean vs Golden Star</span>
+                    </h2>
+                    <p class="card__category">Дизайн</p>
+                  </div>
+                </a>
+              </article>
             </li>
-            <li class="project-item">
-              <a class="project-link link" href="">
-                <div class="project-item-overlay">
-                  <img
-                    class="project-preview"
-                    src="./images/portfolio/portfolio-pic-4.jpg"
-                    alt="Беспроводные аушники"
-                    width="370"
-                    height="295"
-                  />
-                  <p class="project-item-description">Проект <span lang="en">Prime</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                    шпионажа и атак на защищённые сервера конкурентов.</p>
-                </div>
-                <div class="project-item-info">
-                  <h2 class="project-title">Проект <span lang="en">Prime</span></h2>
-                  <p class="project-category">Маркетинг</p>
-                </div>
-              </a>
+            
+            <li class="cards-grid__item">
+              <article class="card">
+                <a class="card__link link" href="">
+                  <div class="card__overlay">
+                    <img
+                      class="card__preview"
+                      src="./images/portfolio/portfolio-pic-3.jpg"
+                      alt="Логотип ресторана в виде рыбы"
+                      width="370"
+                      height="295"
+                    />
+                    <p class="card__description">Ресторан <span lang="en">Seafood</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                      шпионажа и атак на защищённые сервера конкурентов.</p>
+                  </div>
+                  <div class="card__info">
+                    <h2 class="card__title">Ресторан <span lang="en">Seafood</span></h2>
+                    <p class="card__category">Приложение</p>
+                  </div>
+                </a>
+              </article>
             </li>
-            <li class="project-item">
-              <a class="project-link link" href="">
-                <div class="project-item-overlay">
-                  <img
-                    class="project-preview"
-                    src="./images/portfolio/portfolio-pic-5.jpg"
-                    alt="Две коробки"
-                    width="370"
-                    height="295"
-                  />
-                  <p class="project-item-description">Проект <span lang="en">Boxes</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                    шпионажа и атак на защищённые сервера конкурентов.</p>
-                </div>
-                <div class="project-item-info">
-                  <h2 class="project-title">Проект <span lang="en">Boxes</span></h2>
-                  <p class="project-category">Приложение</p>
-                </div>
-              </a>
+            
+            <li class="cards-grid__item">
+              <article class="card">
+                <a class="card__link link" href="">
+                  <div class="card__overlay">
+                    <img
+                      class="card__preview"
+                      src="./images/portfolio/portfolio-pic-4.jpg"
+                      alt="Беспроводные аушники"
+                      width="370"
+                      height="295"
+                    />
+                    <p class="card__description">Проект <span lang="en">Prime</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                      шпионажа и атак на защищённые сервера конкурентов.</p>
+                  </div>
+                  <div class="card__info">
+                    <h2 class="card__title">Проект <span lang="en">Prime</span></h2>
+                    <p class="card__category">Маркетинг</p>
+                  </div>
+                </a>
+              </article>
             </li>
-            <li class="project-item">
-              <a class="project-link link" href="">
-                <div class="project-item-overlay">
-                  <img
-                    class="project-preview"
-                    src="./images/portfolio/portfolio-pic-6.jpg"
-                    lang="en"
-                    alt="iMac"
-                    width="370"
-                    height="295"
-                  />
-                  <p class="project-item-description"> <span lang="en">Inspiration has no Borders</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                    шпионажа и атак на защищённые сервера конкурентов.</p>
-                </div>
-                <div class="project-item-info">
-                  <h2 class="project-title" lang="en">Inspiration has no Borders</h2>
-                  <p class="project-category">Веб-сайт</p>
-                </div>
-              </a>
+            
+            <li class="cards-grid__item">
+              <article class="card">
+                <a class="card__link link" href="">
+                  <div class="card__overlay">
+                    <img
+                      class="card__preview"
+                      src="./images/portfolio/portfolio-pic-5.jpg"
+                      alt="Две коробки"
+                      width="370"
+                      height="295"
+                    />
+                    <p class="card__description">Проект <span lang="en">Boxes</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                      шпионажа и атак на защищённые сервера конкурентов.</p>
+                  </div>
+                  <div class="card__info">
+                    <h2 class="card__title">Проект <span lang="en">Boxes</span></h2>
+                    <p class="card__category">Приложение</p>
+                  </div>
+                </a>
+              </article>
             </li>
-            <li class="project-item">
-              <a class="project-link link" href="">
-                <div class="project-item-overlay">
-                  <img
-                    class="project-preview"
-                    src="./images/portfolio/portfolio-pic-7.jpg"
-                    alt="Разворот журнала"
-                    width="370"
-                    height="295"
-                  />
-                  <p class="project-item-description">Издание <span lang="en">Limited Edition</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                    шпионажа и атак на защищённые сервера конкурентов.</p>
-                </div>
-                <div class="project-item-info">
-                  <h2 class="project-title">Издание <span lang="en">Limited Edition</span></h2>
-                  <p class="project-category">Дизайн</p>
-                </div>
-              </a>
+            
+            <li class="cards-grid__item">
+              <article class="card">
+                <a class="card__link link" href="">
+                  <div class="card__overlay">
+                    <img
+                      class="card__preview"
+                      src="./images/portfolio/portfolio-pic-6.jpg"
+                      lang="en"
+                      alt="iMac"
+                      width="370"
+                      height="295"
+                    />
+                    <p class="card__description"> <span lang="en">Inspiration has no Borders</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                      шпионажа и атак на защищённые сервера конкурентов.</p>
+                  </div>
+                  <div class="card__info">
+                    <h2 class="card__title" lang="en">Inspiration has no Borders</h2>
+                    <p class="card__category">Веб-сайт</p>
+                  </div>
+                </a>
+              </article>
             </li>
-            <li class="project-item">
-              <a class="project-link link" href="">
-                <div class="project-item-overlay">
-                  <img
-                    class="project-preview"
-                    src="./images/portfolio/portfolio-pic-8.jpg"
-                    alt="Этикетка"
-                    width="370"
-                    height="295"
-                  />
-                  <p class="project-item-description">Проект <span lang="en">LAB</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                    шпионажа и атак на защищённые сервера конкурентов.</p>
-                </div>
-                <div class="project-item-info">
-                  <h2 class="project-title">Проект <span lang="en">LAB</span></h2>
-                  <p class="project-category">Маркетинг</p>
-                </div>
-              </a>
+            
+            <li class="cards-grid__item">
+              <article class="card">
+                <a class="card__link link" href="">
+                  <div class="card__overlay">
+                    <img
+                      class="card__preview"
+                      src="./images/portfolio/portfolio-pic-7.jpg"
+                      alt="Разворот журнала"
+                      width="370"
+                      height="295"
+                    />
+                    <p class="card__description">Издание <span lang="en">Limited Edition</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                      шпионажа и атак на защищённые сервера конкурентов.</p>
+                  </div>
+                  <div class="card__info">
+                    <h2 class="card__title">Издание <span lang="en">Limited Edition</span></h2>
+                    <p class="card__category">Дизайн</p>
+                  </div>
+                </a>
+              </article>
             </li>
-            <li class="project-item">
-              <a class="project-link link" href="">
-                <div class="project-item-overlay">
-                  <img
-                    class="project-preview"
-                    src="./images/portfolio/portfolio-pic-9.jpg"
-                    alt="Процесс набора текста на клавиатуре ноутбука"
-                    width="370"
-                    height="295"
-                  />
-                  <p class="project-item-description"> <span lang="en">Growing Business</span>это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
-                    шпионажа и атак на защищённые сервера конкурентов.</p>
-                </div>
-                <div class="project-item-info">
-                  <h2 class="project-title" lang="en">Growing Business</h2>
-                  <p class="project-category">Приложение</p>
-                </div>
-              </a>
+            
+            <li class="cards-grid__item">
+              <article class="card">
+                <a class="card__link link" href="">
+                  <div class="card__overlay">
+                    <img
+                      class="card__preview"
+                      src="./images/portfolio/portfolio-pic-8.jpg"
+                      alt="Этикетка"
+                      width="370"
+                      height="295"
+                    />
+                    <p class="card__description">Проект <span lang="en">LAB</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                      шпионажа и атак на защищённые сервера конкурентов.</p>
+                  </div>
+                  <div class="card__info">
+                    <h2 class="card__title">Проект <span lang="en">LAB</span></h2>
+                    <p class="card__category">Маркетинг</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            
+            <li class="cards-grid__item">
+              <article class="card"></article>
+                <a class="card__link link" href="">
+                  <div class="card__overlay">
+                    <img
+                      class="card__preview"
+                      src="./images/portfolio/portfolio-pic-9.jpg"
+                      alt="Процесс набора текста на клавиатуре ноутбука"
+                      width="370"
+                      height="295"
+                    />
+                    <p class="card__description"> <span lang="en">Growing Business</span>это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                      шпионажа и атак на защищённые сервера конкурентов.</p>
+                  </div>
+                  <div class="card__info">
+                    <h2 class="card__title" lang="en">Growing Business</h2>
+                    <p class="card__category">Приложение</p>
+                  </div>
+                </a>
+              </article>
             </li>
           </ul>
         </div>
@@ -272,10 +299,10 @@
                   rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
               </li>
               <li class="address-list__item">
-                <a class="email link" href="mailto:info@example.com">info@example.com</a>
+                <a class="email email--footer-text-styles link" href="mailto:info@example.com">info@example.com</a>
               </li>
               <li class="address-list__item">
-                <a class="telephone link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="telephone telephone--footer-text-styles link" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
